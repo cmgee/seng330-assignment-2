@@ -7,11 +7,16 @@
 class Room : public GameEntity {
 
 private:
+	
 
 public:
+	Room* Clone();
+
+	Room();
 	Room(int id, std::string name);
 	Room(int id, std::string name, std::string description);
 	~Room(  );
+
 
 };
 
