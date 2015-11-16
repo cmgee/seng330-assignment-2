@@ -9,6 +9,9 @@ class Item : public GameEntity {
 private:
 
 public:
+	Item* Clone();
+
+	Item();
 	Item(int id, std::string description);
 	Item(int id, std::string name, std::string description);
 	~Item();
