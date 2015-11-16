@@ -1,7 +1,15 @@
 #include "GameEntity.h"
 
 #include <iostream>
+#include <string>
 
+GameEntity::GameEntity() {
+    id_ = 0;
+    name_ = "";
+    description_ = "";
+
+    std::cout << "Created an entity..." << std::endl;
+}
 
 GameEntity::GameEntity(int id, std::string name) {
     id_ = id;
@@ -35,19 +43,12 @@ std::string GameEntity::GetDescription() {
     return description_;
 }
 
-void GameEntity::SetId(int id) {
-    id_ = id;
-}
-
-void GameEntity::SetName(std::string name) {
-    name_ = name;
-}
-
 void GameEntity::SetDescription(std::string description) {
     description_ = description;
 }
 
 void GameEntity::Print() {
-    std::cout << id_ << " " << name_ << " " << description_ << std::endl;
+    //std::cout << description_ << std::endl;
+    std::cout << "The description_ for the thing" << std::endl;
 }
 
