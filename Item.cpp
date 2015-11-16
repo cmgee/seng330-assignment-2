@@ -1,7 +1,12 @@
 #include "Item.h"
 
+
+Item::Item() {
+	std::cout << "Created an item..." <<std::endl;
+}
+
 Item::Item(int id, std::string description) : GameEntity(id, description) {
-	std::cout <<"Created an item..." << std::endl;
+	std::cout << "Created an item..." << std::endl;
 }
 
 Item::Item(int id, std::string name, std::string description) : GameEntity(id, name, description) {

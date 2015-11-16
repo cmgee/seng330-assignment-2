@@ -12,18 +12,19 @@ private:
     std::string description_;
 
 public:
+    GameEntity();
     GameEntity(int id, std::string name);
     GameEntity(int id, std::string name, std::string description);
     ~GameEntity();
     
+    virtual GameEntity* Clone() = 0;
+
     void Print();
 
     int GetId();
 	std::string GetName();
     std::string GetDescription();
     
-    void setId(int id);
-    void setName(std::string name);
     void SetDescription(std::string description);
 
 };
