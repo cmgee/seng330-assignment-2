@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+
 GameEntity::GameEntity(int id, std::string name) {
     id_ = id;
     name_ = name;
@@ -34,6 +35,14 @@ std::string GameEntity::GetDescription() {
     return description_;
 }
 
+void GameEntity::SetId(int id) {
+    id_ = id;
+}
+
+void GameEntity::SetName(std::string name) {
+    name_ = name;
+}
+
 void GameEntity::SetDescription(std::string description) {
     description_ = description;
 }
@@ -41,3 +50,4 @@ void GameEntity::SetDescription(std::string description) {
 void GameEntity::Print() {
     std::cout << id_ << " " << name_ << " " << description_ << std::endl;
 }
+

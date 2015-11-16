@@ -2,6 +2,7 @@
 #define __GAMEENTITY_H__
 
 #include <string>
+#include <iostream>
 
 class GameEntity {
 
@@ -14,11 +15,15 @@ public:
     GameEntity(int id, std::string name);
     GameEntity(int id, std::string name, std::string description);
     ~GameEntity();
+    
     void Print();
 
     int GetId();
 	std::string GetName();
     std::string GetDescription();
+    
+    void setId(int id);
+    void setName(std::string name);
     void SetDescription(std::string description);
 
 };
