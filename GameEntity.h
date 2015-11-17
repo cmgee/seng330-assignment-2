@@ -20,11 +20,6 @@ public:
     virtual GameEntity* Clone() = 0;
 
     void Print();
-
-    int GetId();
-	std::string GetName();
-    std::string GetDescription();
-    
     void SetDescription(std::string description);
 
 };
