@@ -1,0 +1,173 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		0F605D6D1BFAF0990087B330 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ../../project/temp/temp2/Item.h; sourceTree = "<group>"; };
+		0F605D6E1BFAF0990087B330 /* Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Factory.h; path = ../../project/temp/temp2/Factory.h; sourceTree = "<group>"; };
+		0F605D6F1BFAF0990087B330 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Room.h; path = ../../project/temp/temp2/Room.h; sourceTree = "<group>"; };
+		0F605D701BFAF0990087B330 /* GameEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GameEntity.cpp; path = ../../project/temp/temp2/GameEntity.cpp; sourceTree = "<group>"; };
+		0F605D711BFAF0990087B330 /* GameEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameEntity.h; path = ../../project/temp/temp2/GameEntity.h; sourceTree = "<group>"; };
+		0F605D761BFAF3D80087B330 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F605D651BFAF06A0087B330 = {
+			isa = PBXGroup;
+			children = (
+				0F605D761BFAF3D80087B330 /* Makefile */,
+				0F605D6D1BFAF0990087B330 /* Item.h */,
+				0F605D6E1BFAF0990087B330 /* Factory.h */,
+				0F605D6F1BFAF0990087B330 /* Room.h */,
+				0F605D701BFAF0990087B330 /* GameEntity.cpp */,
+				0F605D711BFAF0990087B330 /* GameEntity.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		0F605D721BFAF0CE0087B330 /* Makefile */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 0F605D731BFAF0CE0087B330 /* Build configuration list for PBXLegacyTarget "Makefile" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Makefile;
+			passBuildSettingsInEnvironment = 1;
+			productName = target;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		0F605D661BFAF06A0087B330 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 0F605D691BFAF06A0087B330 /* Build configuration list for PBXProject "seng330a2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F605D651BFAF06A0087B330;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F605D721BFAF0CE0087B330 /* Makefile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		0F605D6A1BFAF06B0087B330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		0F605D6B1BFAF06B0087B330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		0F605D741BFAF0CE0087B330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F605D751BFAF0CE0087B330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F605D691BFAF06A0087B330 /* Build configuration list for PBXProject "seng330a2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F605D6A1BFAF06B0087B330 /* Debug */,
+				0F605D6B1BFAF06B0087B330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F605D731BFAF0CE0087B330 /* Build configuration list for PBXLegacyTarget "Makefile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F605D741BFAF0CE0087B330 /* Debug */,
+				0F605D751BFAF0CE0087B330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F605D661BFAF06A0087B330 /* Project object */;
+}
