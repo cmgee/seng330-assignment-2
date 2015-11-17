@@ -8,4 +8,5 @@ Download the files into a directory.
 Type the make command.
 ./GameEntity to run it.
 
-
+Doxygen:
+Includes config file, html, and screen shots (.png files)
