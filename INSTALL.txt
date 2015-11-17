@@ -1,0 +1,11 @@
+Build with XCode or use the Makefile:
+
+XCode:
+open and build seng330a2.xcodeproj
+
+Makefile:
+Download the files into a directory.
+Type the make command.
+./GameEntity to run it.
+
+
