@@ -10,7 +10,6 @@ GameEntity::GameEntity() {
     id_ = 0;
     name_ = "";
     description_ = "";
-
 // DEBUG   std::cout << "Created an entity..." << std::endl;
 }
 
@@ -18,7 +17,6 @@ GameEntity::GameEntity(int id, std::string name) {
     id_ = id;
     name_ = name;
     description_ = "";
-
 // DEBUG   std::cout << "Created an entity..." << std::endl;
 }
 
@@ -26,7 +24,6 @@ GameEntity::GameEntity(int id, std::string name, std::string description) {
     id_ = id;
     name_ = name;
     description_ = description;
-
 // DEBUG   std::cout << "Created an entity..." << std::endl;
 }
 
@@ -44,7 +41,6 @@ void GameEntity::Print() {
 
 
 
-
 int main (int argc, char* argv[]) {
 
     int user_input;
@@ -57,23 +53,19 @@ int main (int argc, char* argv[]) {
         std::cout << "1. Make a room" << std::endl;
         std::cout << "2. Make an item" << std::endl;
         std::cout << "0. Go" << std::endl;
-
         std::cin >> user_input;
 
         if (user_input == 0) {
             break;
-        } else {
-            
+        } else {            
             std::cout << "Enter a name for the object: ";
             std::cin >> entity_name;
 
-        
             GameEntity* Entity = Factory::make_game_entity(user_input); 
             Entity->SetDescription(entity_name);
 
             game_entities.push_back(Entity);   
         } 
-
     }
 
     std::cout << "---------------------------------------------\n";
@@ -81,7 +73,6 @@ int main (int argc, char* argv[]) {
     for (int i=0; i < game_entities.size(); i++) {
         game_entities[i]->Print();
     }
-
 }
 
 
