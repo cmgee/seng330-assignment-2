@@ -7,7 +7,9 @@
 
 
 
-/* GameEntity constructors with initial variables */
+/**
+ * GameEntity constructors with initial variables 
+ */
 GameEntity::GameEntity() {
     id_ = 0;
     name_ = "";
@@ -32,12 +34,14 @@ GameEntity::GameEntity(int id, std::string name, std::string description) {
 // DEBUG   std::cout << "Created an entity..." << std::endl;
 }
 
-/* GameEntity destructor */
+/**
+ * GameEntity destructor 
+ */
 GameEntity::~GameEntity() {
     std::cout << "Destroyed an entity..." << std::endl;
 }
 
-/*
+/**
  * Set the description for the entity
  * A2: Used when the user is prompted for an item name 
  */
@@ -45,7 +49,7 @@ void GameEntity::SetDescription(std::string description) {
     description_ = description;
 }
 
-/*
+/**
  * Print out information about the entity
  * A2: Used to relay the name of the room or item given by the user's input 
  */
@@ -54,7 +58,9 @@ void GameEntity::Print() {
 }
 
 
-
+/**
+ * Main
+ */
 int main (int argc, char* argv[]) {
 
     int user_input;
@@ -94,7 +100,7 @@ int main (int argc, char* argv[]) {
 }
 
 
-/*
+/**
  * Room constructors
  * Room inherits GameEntity
  */
@@ -106,19 +112,23 @@ Room::Room(int id, std::string name) : GameEntity(id, name) {
     std::cout << "Created a room..." << std::endl;
 }
 
-/* Room Deconstructor */
+/**
+ * Room Deconstructor 
+ */
 Room::~Room(  ) {
     std::cout << "Destroyed a room..." << std::endl;
 }
 
-/* Clones a Room */
+/**
+ * Clones a Room 
+ */
 Room* Room::Clone() {
     std::cout << "* * * Cloned a room * * *" << std::endl;
     return new Room;
 }
 
 
-/*
+/**
  * Item constructors
  * Item inherits GameEntity
  */
@@ -130,20 +140,24 @@ Item::Item(int id, std::string description) : GameEntity(id, description) {
     std::cout << "Created an item..." << std::endl;
 }
 
-/* Clones an Item */
+/**
+ * Clones an Item 
+ */
 Item* Item::Clone() {
     std::cout << "* * * Cloned an item * * *" << std::endl;
     return new Item;
 }
 
 
-/* 
+/**
  * Factory 
  * Includes an array of prototypes for room and item entities
  */
 GameEntity* Factory::game_entity_prototypes[] = { 0, new Room, new Item };
 
-/* Make a copy of the object in the prototypes array */
+/** 
+ * Make a copy of the object in the prototypes array 
+ */
 GameEntity* Factory::make_game_entity(int user_input) {
     return game_entity_prototypes[user_input]->Clone();
 } 
